@@ -24,7 +24,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ../postgres-dwh:/var/lib/postgresql/data:rw"
+      - "./postgres-dwh:/var/lib/postgresql/data:rw"
 
 # Postgres database container for Kestra internal fuctions
   postgres:
